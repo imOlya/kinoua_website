@@ -1,0 +1,16 @@
+{
+  "name": "kinoua_website",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel ./src/index.html --open",
+    "build": "parcel build --public-url=/dist/",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

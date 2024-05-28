@@ -1,0 +1,124 @@
+.header {
+  background-image: url(../images/header-bg-copy.png);
+  background-position: center;
+  background-size: cover;
+
+  &--shadows {
+    background-image: url(../images/background/shadows.png);
+  }
+
+  &--20days {
+    background-image: url(../images/background/20-days-in-mariupol-min.jpg);
+  }
+
+  &--moi-dumky-tyhi {
+    background-image: url(../images/background/moi-dumky-tyhi-bg.jpg);
+  }
+
+  &--za-dvoma-zaytsyamy {
+    background-image: url(../images/background/za-dvoma-zaytsyamy-bg.jpg);
+  }
+
+  &--zemlya {
+    background-image: url(../images/background/zemlya-bg.png);
+  }
+
+  &--man-with-camera {
+    background-image: url(../images/background/man-with-camera-bg.jpg);
+  }
+
+  &--kaminnyy {
+    background-image: url(../images/background/Kaminnyy.jpg);
+  }
+
+  &--pryhody-kapitana-Vrunhelya {
+    background-image: url(../images/background/pryhody-kapitana-Vrunhelya.jpg);
+  }
+
+  &--plemya {
+    background-image: url(../images/background/plemya-bg.jpg);
+  }
+
+  &--atlantyda {
+    background-image: url(../images/background/atlantyda-bg.jpg);
+  }
+
+  &--zemlya-blakytna-niby-apelsyn {
+    background-image: url(../images/background/zemlya-blakytna-niby-apelsyn-bg.jpg);
+  }
+
+  &--dodomu {
+    background-image: url(../images/background/dodomu-bg.jpg);
+  }
+
+  &--lost-paper {
+    background-image: url(../images/background/lost-paper.jpg);
+  }
+
+  &--bilyi-ptakh {
+    background-image: url(../images/background/bilyi-ptakh-bg.jpg);
+  }
+
+  &--eneida {
+    background-image: url(../images/background/eneida-bg.png);
+  }
+
+  &--kiborhy {
+    background-image: url(../images/background/kiborhy-bg.jpg);
+  }
+
+  &--kozaky {
+    background-image: url(../images/background/kozaky-bg.jpg);
+  }
+
+  &--hamer {
+    background-image: url(../images/background/hamer-bg.jpg);
+  }
+
+  &--dream {
+    background-image: url(../images/background/dream-bg.png);
+  }
+
+  &--krynytsya-dlya-sprahlyh {
+    background-image: url(../images/background/krynytsya-dlya-sprahlyh-bg.jpg);
+  }
+
+  &--maydan {
+    background-image: url(../images/background/maydan-bg.jpg);
+  }
+
+  &--pamfir {
+    background-image: url(../images/background/pamfir-bg.jpg);
+  }
+
+  &--butterfly-vision {
+    background-image: url(../images/background/butterfly-vision-bg.jpeg);
+  }
+
+  &--lyuksemburg-lyuksemburg {
+    background-image: url(../images/background/lyuksemburg-lyuksemburg-bg.jpg);
+  }
+
+  &__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-top: 25vh;
+
+    color: $main-light;
+    text-shadow: 5px 5px $accent-main;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -1.5px;
+
+    @include on-tablet {
+      font-size: 64px;
+      line-height: 64px;
+    }
+  }
+}

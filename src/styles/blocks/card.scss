@@ -1,0 +1,81 @@
+.catalog__page {
+    box-sizing: border-box;
+
+    &--body {
+        margin: 0;
+    }
+}
+
+.catalog__main {
+    --columns-count: 1;
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns-count), 200px);
+    gap: 46px 48px;
+    justify-content: center;
+    padding: 50px 40px;
+}
+
+@include on-phone {
+    .catalog__main {
+        --columns-count: 2;
+    }
+}
+
+@include on-tablet {
+    .catalog__main {
+        --columns-count: 3;
+    }
+}
+
+@include on-desktop {
+    .catalog__main {
+        --columns-count: 4;
+    }
+}
+
+.card {
+    grid-column: span 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    transition: all $effectDuration;
+    margin-bottom: 16px;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &__image {
+        width: 100%;
+        height: 134px;
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 500;
+        margin: 0 0 4px;
+        color: $accent-main;
+
+        &:hover {
+            color: $button-hover;
+        }
+    }
+
+    &__description {
+        font-size: 12px;
+        line-height: 14px;
+        color: $secondary-accent;
+        margin: 0 0 16px;
+        text-align: justify;
+    }
+
+    &__link {
+        width: 100%;
+    }
+}

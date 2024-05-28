@@ -1,0 +1,48 @@
+.catalog {
+    &__page{
+        scroll-behavior: smooth;
+    }
+
+    &__header {
+    background-position: center;
+    background-size: cover;
+
+        &--content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--title {
+            color: $main-dark;
+            text-shadow: 5px 5px $main-light;
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            text-align: center;
+            margin: 24px 0 40px 0;;
+
+            @include on-tablet {
+                font-size: 48px;
+                line-height: 48px;
+            }
+        }
+
+        &--description {
+            text-align: center;
+
+        }
+    }
+
+    &__icon {
+        
+        &--menu {
+            background-image: url(../images/icons/catalog-icon-burger-menu.svg);
+        
+            &:hover {
+                background-image: url(../images/icons/catalog-icon-burger-hover.svg);
+            }
+        }
+    }
+}
